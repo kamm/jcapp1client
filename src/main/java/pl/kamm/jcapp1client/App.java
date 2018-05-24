@@ -15,7 +15,7 @@ public class App
         try {
             byte[] appletId = {(byte) 0xbb, (byte) 0xbb, (byte) 0xcc, (byte) 0xdd, (byte) 0xee, (byte) 0x01, (byte) 0x01};
             TerminalFactory factory = TerminalFactory.getDefault();
-            CardTerminal terminal = factory.terminals().getTerminal("Alcor Micro USB Smart Card Reader 0");
+            CardTerminal terminal = factory.terminals().list().get(0);
             Card card = terminal.connect("*");
             CardChannel channel = card.getBasicChannel();
 
