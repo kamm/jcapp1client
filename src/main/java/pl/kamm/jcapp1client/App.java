@@ -1,4 +1,4 @@
-package pl.kmetrak.jcapp1client;
+package pl.kamm.jcapp1client;
 
 import javax.smartcardio.Card;
 import javax.smartcardio.CardChannel;
